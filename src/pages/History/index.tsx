@@ -37,8 +37,8 @@ export const History = () => {
         <>
           <h1>Histórico de Pedidos</h1>
           {orders.map((order) => (
-            <HistoryCardContainer>
-              <Fragment key={order.items.id}>
+            <Fragment key={order.id}>
+              <HistoryCardContainer>
                 <div>
                   <Coffee size={32} />
                   <p>{dateConfig(order.id)}</p>
@@ -53,13 +53,13 @@ export const History = () => {
                       {new Intl.NumberFormat("pt-br", {
                         currency: "BRL",
                         style: "currency",
-                      }).format(order.coffeValue)}
+                      }).format(order.coffeValue!)}
                     </span>
                     {` - ${translatePayment(order.paymentMethod)}`}
                   </p>
                 </div>
-              </Fragment>
-            </HistoryCardContainer>
+              </HistoryCardContainer>
+            </Fragment>
           ))}
         </>
       )}

@@ -36,7 +36,7 @@ import {
 } from "./styles";
 
 import { coffees } from "../../../data.json";
-import { ServerResponse, getCEP } from "../../services/apiViaCep";
+import { getCEP } from "../../services/apiViaCep";
 
 type FormInputs = {
   cep: number;
@@ -131,15 +131,16 @@ export function Cart() {
     checkout(data);
   };
 
-  const checkCEP = async (event) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const checkCEP = async (event: any) => {
     const cep = event.target.value.replace(/\D/g, "");
 
     if (cep) {
-      getCEP(cep).then((res: ServerResponse) => {
-        setValue("street", res.data.logradouro);
-        setValue("neighborhood", res.data.bairro);
-        setValue("city", res.data.localidade);
-        setValue("state", res.data.uf);
+      getCEP(cep).then((res) => {
+        setValue("street", res!.data.logradouro);
+        setValue("neighborhood", res!.data.bairro);
+        setValue("city", res!.data.localidade);
+        setValue("state", res!.data.uf);
       });
     }
   };

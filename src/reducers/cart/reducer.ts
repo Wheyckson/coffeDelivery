@@ -10,7 +10,7 @@ export interface Item {
 export interface Order extends OrderInfo {
   id: number;
   items: Item[];
-  coffeValue: number;
+  coffeValue?: number;
 }
 
 interface CartState {
