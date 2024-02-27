@@ -32,8 +32,6 @@ Coffee Delivery é uma página web de catalogo e compra de cafés pela [RocketSe
 
 [Preview](<https://coffe-delivery-zeta-gules.vercel.app>)
 
- https://coffe-delivery-zeta-gules.vercel.app
-
 
 ## 🛠 Technologies and Libs:
 
