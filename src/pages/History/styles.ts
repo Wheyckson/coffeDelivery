@@ -6,14 +6,6 @@ export const HistoryContainer = styled.section`
   padding: 32px 20px;
   margin: 0 auto;
 
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
-
   > h2 {
     ${({ theme }) => theme.fonts.titleXS}
     margin-top: 24px;
@@ -23,6 +15,14 @@ export const HistoryContainer = styled.section`
     ${({ theme }) => theme.fonts.titleXS}
     margin-bottom: 24px;
   }
+`;
+
+export const NoOrder = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 `;
 
 export const HistoryCardContainer = styled.div`

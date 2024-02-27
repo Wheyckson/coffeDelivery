@@ -1,4 +1,4 @@
-import { HistoryCardContainer, HistoryContainer } from "./styles";
+import { HistoryCardContainer, HistoryContainer, NoOrder } from "./styles";
 
 import { Coffee } from "@phosphor-icons/react";
 import { useCart } from "../../hooks/useCart";
@@ -29,10 +29,10 @@ export const History = () => {
   return (
     <HistoryContainer>
       {isCartEmpty ? (
-        <div>
+        <NoOrder>
           <Coffee size={32} />
           <h2>Nenhum pedido ainda!</h2>
-        </div>
+        </NoOrder>
       ) : (
         <>
           <h1>Histórico de Pedidos</h1>
