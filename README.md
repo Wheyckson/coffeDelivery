@@ -8,9 +8,9 @@
 
 <p align="center">
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Wheyckson/coffee-delivery.svg">  
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Wheyckson/coffeDelivery.svg">  
  
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Wheyckson/coffee-delivery.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Wheyckson/coffeDelivery.svg">
 
 </p>
 
