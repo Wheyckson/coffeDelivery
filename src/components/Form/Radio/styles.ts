@@ -30,4 +30,8 @@ export const Container = styled.label`
   svg {
     color: ${({ theme }) => theme.colors.purple};
   }
+
+  @media (max-width: 525px) {
+    width: auto;
+  }
 `;

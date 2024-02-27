@@ -185,6 +185,7 @@ export function Cart() {
 
                 <TextInput
                   placeholder="Número"
+                  type="number"
                   containerProps={{ style: { gridArea: "number" } }}
                   error={errors.number}
                   {...register("number")}

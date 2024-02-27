@@ -31,7 +31,7 @@ export const History = () => {
       {isCartEmpty ? (
         <div>
           <Coffee size={32} />
-          <h2>Você ainda não completou nenhum pedido!</h2>
+          <h2>Nenhum pedido ainda!</h2>
         </div>
       ) : (
         <>

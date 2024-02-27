@@ -12,7 +12,10 @@ export const CartContainer = styled.main`
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    min-width: 468px;
+  }
+
+  @media (max-width: 391px) {
+    min-width: none;
   }
 `;
 
@@ -66,6 +69,19 @@ export const AddressForm = styled.div`
     "neighborhood city state";
   grid-template-columns: 200px 1fr 60px;
   grid-gap: 16px 12px;
+
+  @media (max-width: 525px) {
+    display: grid;
+    grid-template-areas:
+      "cep"
+      "street"
+      "number"
+      "fullAddress"
+      "neighborhood"
+      "city"
+      "state";
+    grid-template-columns: none;
+  }
 `;
 
 export const PaymentContainer = styled.div`
@@ -81,6 +97,11 @@ export const PaymentOption = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 12px;
+
+    @media (max-width: 525px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
 
@@ -154,6 +175,19 @@ export const Coffee = styled.div`
   > aside {
     font-weight: bold;
     min-width: 52px;
+
+    @media (max-width: 525px) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 525px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 `;
 

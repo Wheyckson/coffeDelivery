@@ -6,6 +6,14 @@ export const HistoryContainer = styled.section`
   padding: 32px 20px;
   margin: 0 auto;
 
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
   > h2 {
     ${({ theme }) => theme.fonts.titleXS}
     margin-top: 24px;
@@ -19,11 +27,11 @@ export const HistoryContainer = styled.section`
 
 export const HistoryCardContainer = styled.div`
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #f3f2f2;
-    padding: 16px 24px;
-    margin-bottom: 16px;
-    justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #f3f2f2;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+  justify-items: center;
 
   > div {
     display: flex;
